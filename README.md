@@ -1,2 +1,1 @@
-# kottans-js-2016
-## home work
+## for home work
