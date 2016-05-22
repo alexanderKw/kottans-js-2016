@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang=en-ru>
+<head>
+	<meta charset=utf-8>
+	<title>Habrahabr</title>
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<section>
+			<ul>
+				<li><a href=/>TM Feed</a>
+				<li><a href=/>Хабрахабр</a>
+				<li><a href=/>Geektimes</a>
+				<li><a href=/>Тостер</a>
+				<li><a href=/>Мой круг</a>
+				<li><a href=/>Фрилансим</a>
+			</ul>
+		</section>
+		<section>
+			<h1>Спецпроекты:</h1>
+			<ul>
+				<li><a href=/>Cобери стартап</a>
+				<li><a href=/>Cценарии для Linux</a>
+				<li><a href=/>Создайте первую игру</a>
+			</ul>
+		</section>
+	</header>
+	<!-- END HEADER -->
+
+	<!-- MAIN -->
+	<main>
+		<!-- LEFT MENU PANEL -->
+		<section>
+			<strong>
+				<a href=/>Cite Logo</a>
+			</strong>
+			<a href=/>click menu</a>
+			<nav>
+				<section>
+					<h1>Разделы</h1>
+					<form action=/ name=header-search>
+						<input type=search name=search placeholder=поиск>
+					</form>
+					<ul>
+						<li><a href=/>Публикации</a>
+						<li><a href=/>Хабы</a>
+						<li><a href=/>Компании</a>
+						<li><a href=/>Пользователи</a>
+						<li><a href=/>Песочница</a>
+					</ul>
+				</section>
+				<section>
+					<h1>Спецпроекты</h1>
+					<ul>
+						<li><a href=/>Соберите свой стартап</a>
+						<li><a href=/>Linux в Azure</a>
+						<li><a href=/>Создай игру</a>
+					</ul>
+				</section>
+			</nav>
+		</section>
+		<!-- END LEFT MENU PANEL -->
+
+		<!-- ASIDE(right) -->
+		<aside>
+			<section>
+				<h1>Advertise</h1>
+			</section>
+			<section>
+				<h1>Хабы</h1>
+				<nav>
+					<ul>
+						<li><a href=/>Программирование</a>
+						<li><a href=/>Разработка веб-сайтов</a>
+						<li><a href=/>JavaScript</a>
+						<li><a href=/>ИТ-инфраструктура</a>
+						<li><a href=/>Node.JS</a>
+						<li><a href=/>Разработка под Android</a>
+						<li><a href=/>Математика</a>
+						<li><a href=/>Алгоритмы</a>
+						<li><a href=/>Разработка игр</a>
+						<li><a href=/>Обработка изображений</a>
+					</ul>
+					<b><a href=/>Все хабы</a></b>
+				</nav>
+			</section>
+		</aside>
+		<!-- END ASIDE -->
+
+		<!-- MAIN CONTENT -->
+		<form name=subscribe action=/>
+			<section>
+				<figure>
+					<a href=/>User Logo</a>
+					<figcaption>
+						<address><a href=/>@rayproud</a>
+							<em>Пользователь</em>
+						</address>
+						<dl>
+							<dt>карма
+							<dd><meter min=0 max=100 value=2>2,0</meter>
+							<dt>рейтинг
+							<dd><meter min=0 max=10 value=0>0,0</meter>
+
+						</dl>
+					</figcaption>
+				</figure>
+				<button type=submit>подписаться</button>
+			</section>
+
+			<section>
+				<ul>
+					<li><a role=button href=/>Профиль</a>
+					<li><a role=button href=/>Публикации</a>
+					<li><a role=button href=/>Комментарии</a>
+					<li><a role=button href=/>Избранное</a>
+					<li><a role=button href=/>Подписчики</a>
+				</ul>
+			</section>
+		</form>
+
+		<section>
+			<time datetime=2014-12-03T16:57>3 декабря 2014 в 16:57</time>
+			<header>
+				<h1><a href=/>Разработка&nbsp;&rarr;&nbsp;</a>Десять типичных вопросов на собеседованиях на знание HTML<a href=/><em><sup>из песочницы</sup></em></a></h1>
+			</header>
+			<ul>
+				<li><a href=/>HTML<sup>&#9913;</sup></a>
+				<li><a href=/>Семантика<sup>&#9913;</sup></a>
+				<li><a href=/>Разработка веб-сайтов<sup>&#9913;</sup></a>
+			</ul>
+			<p><em><a href=/>Аурэлио Де Роза</a></em> несколько дней назад выпустил, на мой взгляд, очень привлекательную <em><a href=/>статью</a></em>, которой я хочу с вами поделиться на тот случай, если у вас плохо с английским.
+			<article>
+				<p>Несколько недель назад на SitePoint были опубликованы две мои статьи, в которых я рассмотрел наиболее часто задаваемые на собеседовании вопросы по JavaScript (в случае, если вы пропустили: <em><a href=/><q>5 Typical JavaScript Interview Exercises</q></a></em> и <em><a href=/><q>5 More JavaScript Interview Exercises</q></a></em>).
+				<p>Обе эти статьи имели огромный успех, что было крайне неожиданным. Я решил, что пришло время написать подобную статью, но уже на тему HTML — и вот, что у меня получилось.
+			</article>
+
+			<section>
+				<header>
+					<h1>Валидация разметки</h1>
+				</header>
+				<p>Рассмотрим следующую разметку:
+				<pre>
+					<code>&lt;<code>figure</code>&gt;</code>
+						<code>&lt;<code>picture</code>&gt;</code>
+							<code>&lt;<code>source</code> <code>media</code>=<code>"(min-width: 40code)"</code>
+							<code>srcset</code>=<code>"large.jpg 1024w, medium.jpg 640w, small.jpg 320y"</code>&gt;</code>
+							<code>&lt;<code>img</code> <code>src</code>=<code>"medium.jpg"</code> <code>alt</code>=<code>"London by night"</code>&gt;</code>
+						<code>&lt;/<code>picture</code>&gt;</code>
+						<code>&lt;<code>figcaption</code>&gt;</code>A landscape of London by night<code>&lt;/<code>figcaption</code>&gt;</code>
+					<code>&lt;/<code>figure</code>&gt;</code>
+				</pre>
+				<p>Валидный ли это код? Поясните, почему.
+				<strong>Ответ</strong>
+				<p>В разметке используется <em><a href=/>тэг picture</a></em>, который совсем недавно вошел в спецификацию. Код валидный вплоть до последнего изображения в атрибуте <code>srcset; 320y</code> — невалидное значение. Если изменить <code>y</code> на <code>w</code>, то код будет валидным полностью.
+			</section>
+
+			<section>
+				<header>
+					<h1>Элемент <code>main</code></h1>
+				</header>
+				<p>Дайте определение элементу <code>main</code>. Какова его цель? Сходятся ли в определении этого элемента спецификации W3C и WHATWG?
+				<strong>Ответ</strong>
+				<p><code>main</code> элемент не имеет единого определения и в каждой спецификации оно разное.
+				<p>Спецификация W3C <em><a href=/>описывает элемент</a></em> как главное содержание страницы, то есть контент, который описывает основную тему страницы или является ключевым элементом функциональности приложения. В спецификации также говорится, что на странице не может быть больше одного main элемента.
+				<p>Спецификация WHATWG не наделяет тэг main какой-либо семантикой и <em><a href=/>описывает элемент</a></em> как контейнер для главенствующего содержания какого либо элемента. Также, согласно WHATWG, вам не запрещается иметь на одной странице несколько элементов main. Если у вас имеется несколько article элементов на странице, то вы можете выделить главенствующее содержимое каждого article с помощью тэга main.
+			</section>
+
+			<section>
+				<header>
+					<h1>Заключение</h1>
+				</header>
+				<p>В данной статье я рассмотрел десять вопросов для собеседования
+				<p>Чтобы помочь вам изучить эти и другие смежные по теме семантики вопросы, я рекомендую прочитать некоторые из следующих статей SitePoint:
+				<ul>
+					<li><a href=/>5 Obsolete Features in HTML5</a>
+					<li><a href=/>A Guide to the HTML5 ‘time’ Element</a>
+					<li><a href=/>20 HTML Elements for Better Text Semantics</a>
+				</ul>
+				<p>Если у вас есть интересные вопросы по HTML? Делитесь ими в комментариях
+			</section>
+			<ul>
+				<li><a href=/>семантика</a>
+				<li><a href=/>html5</a>
+				<li><a href=/>стандарты и спецификации</a>
+			</ul>
+
+			<form name=rating action=/>
+				<section>
+					<button type=button>&uarr;</button>
+					<meter min=-100 max=100 value=-5>-5</meter>
+					<button type=button>&darr;</button>
+					<ul>
+						<li>44,4k
+						<li>
+							<button>&#9733;</button>281
+					</ul>
+					<ul>
+						<li><a href=/>twitter</a>
+						<li><a href=/>facebook</a>
+						<li><a href=/>vk</a>
+						<li><a href=/>pocket</a>
+					</ul>
+				</section>
+				<section>
+					<figure>
+						<a href=/>User Logo</a>
+						<figcaption>
+							<address><a href=/>@rayproud</a></address>
+							<dl>
+								<dt>карма
+								<dd><meter min=0 max=100 value=2>2,0</meter>
+								<dt>рейтинг
+								<dd><meter min=0 max=10 value=0>0,0</meter>
+							</dl>
+						</figcaption>
+					</figure>
+				</section>
+			</form>
+
+			<figure>
+				<img src=http/ alt>
+				<figcaption>Реклама</figcaption>
+			</figure>
+		</section>
+		<!-- END MAIN CONTENT -->
+	</main>
+	<!-- END MAIN -->
+
+	<!-- BOTTOM ASIDE -->
+	<aside>
+		<header>
+			<h1>Самое читаемое</h1>
+		</header>
+		<ul>
+			<li><a href=#now>week</a>
+			<li><a href=#week>week</a>
+			<li><a href=#month>month</a>
+		</ul>
+		<div>
+			<ul id=now>
+				<li><a href=/>Преступники, заражавшие банкоматы вирусом, пойманы на горячем</a>
+				<li><a href=/>Создаем новую OS. Действительно новую, реально операционную, и правда – систему</a>
+				<li><a href=/>Управляем компьютером с Android устройства</a>
+			</ul>
+			<ul id=week>
+				<li><a href=/>Назад в будущее: <q>Мегамозг</q> возвращается на <q>Хабрахабр</q></a>
+				<li><a href=/>Спасём Firefox</a>
+				<li><a href=/>Осторожнааа! Велобайк! Или 5 ошибок сервиса стоимостью в 1000 рублей</a>
+			</ul>
+			<ul id=month>
+				<li><a href=/>Как взломать Telegram и WhatsApp: спецслужбы не нужны</a>
+				<li><a href=/>Каково это — быть разработчиком, когда тебе сорок</a>
+			</ul>
+		</div>
+	</aside>
+	<!-- END BOTTOM ASIDE -->
+
+	<!-- COMMENTS -->
+	<section>
+		<h1>Комментарии (42)</h1>
+		<form name=comments action=/>
+			<em>отслеживать новые:</em>
+			<label for=email>в почте</label>
+			<input type=checkbox name=email id=email>
+			<label for=tracker>в трекере</label>
+			<input type=checkbox name=tracker id=tracker>
+		</form>
+		<article>
+			<figure>
+				<img src=http/ alt>
+				<figcaption>
+					<address><a href=/>rusmvb</a></address>
+					<time datetime=2014-12-08T12:01>8 декабря 2014 в 12:01</time>
+					<p>Полностью согласен, что сложновато. Это больше вопросы не на умение работать с html, а на знание специфических возможностей, которые в большинстве проектов совсем не уместны. На крайний случай в спецификации эти данные можно найти, а не в голове их таскать.
+				</figcaption>
+			</figure>
+		</article>
+	</section>
+	<!-- END COMMENTS -->
+
+	<!-- FOOTER -->
+	<footer>
+		<section>
+			<em>Разделы</em>
+			<ul>
+				<li><a href=/>Публикации</a>
+				<li><a href=/>Хабы</a>
+				<li><a href=/>Компании</a>
+				<li><a href=/>Пользователи</a>
+				<li><a href=/>Q&amp;A</a>
+				<li><a href=/>Песочница</a>
+			</ul>
+			<em>Инфо</em>
+			<ul>
+				<li><a href=/>О сайте</a>
+				<li><a href=/>Правила</a>
+				<li><a href=/>Помощь</a>
+				<li><a href=/>Соглашение</a>
+			</ul>
+			<em>Услуги</em>
+			<ul>
+				<li><a href=/>Реклама</a>
+				<li><a href=/>Спецпроекты</a>
+				<li><a href=/>Тарифы</a>
+				<li><a href=/>Контент</a>
+				<li><a href=/>Вебинары</a>
+			</ul>
+		</section>
+
+		<section>
+			<small>
+				<a href=/>&copy;TM</a>
+				<a href=/>Служба поддержки</a>
+				<a href=/>Мобильная версия</a>
+			</small>
+			<ul>
+				<li><a href=/>twitter</a>
+				<li><a href=/>facebook</a>
+				<li><a href=/>vk</a>
+			</ul>
+		</section>
+	</footer>
+	<!-- END FOOTER -->
+</body>
+</html>
