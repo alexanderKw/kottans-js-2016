@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>Form Page</title>
+	<meta name=viewport content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet href=css/reset.css>
+	<link rel=stylesheet href=css/fontello.css>
+	<link rel=stylesheet/less type=text/css href=css/style.less>
+	<script src=js/less.min.js></script>
+</head>
+<body>
+	<header class=header>
+		<a class=go-back role=button href=/><i class=icon-left></i>&nbsp;go back</a>
+		<strong class=logo>
+			<a href=/>logo cite</a>
+		</strong>
+		<a class=sign-btn role=button href=/><i class=icon-user></i>&nbsp;sign in</a>
+	</header>
+	<main class=main>
+		<form class=form action=/>
+			<div class=wr-sections>
+				<section class=order-section>
+					<div class=order-list-wrapper>
+						<h1><i class=icon-clipboard></i>your order</h1>
+						<ul class=order-list>
+							<li><em class=order-list-title>items</em><br>2 documents
+							<li><em class=order-list-title>details</em><br>2 languages
+							<li><em class=order-list-title>price</em><br>$ 696.06
+							<li><em class=order-list-title>delivery</em><br>48 hours*
+						</ul>
+					</div>
+					<div class=order-button>
+						<button type=submit class=button name=submit>place order</button>
+						<button type=button class=button name=print>print a quote</button>
+					</div>
+				</section>
+				<section class=order-help-section>
+				<article>
+					<header>
+						<h1><i class=icon-lifebuoy></i>help center</h1>
+					</header>
+					<p>if you need assistantce while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+					<footer>
+						<strong><a href=tel:>+971 (0) 555 555</a></strong>&emsp;<address><a href=mailto:>help@qest.com</a></address>
+					</footer>
+				</article>
+				</section>
+			</div>
+			<section class=select-translate>
+				<h1>select what you want to translate</h1>
+				<div class=select-documents-group>
+					<span class=wrapper-check>
+						<input type=radio name=select-document id=website required>
+						<label for=website><strong class=wrapper-check-title>website</strong><i class=icon-ok></i></label>
+					</span>
+					<span class=wrapper-check>
+						<input type=radio name=select-document id=documents required>
+						<label for=documents><strong class=wrapper-check-title>documents</strong><i class=icon-ok></i></label>
+					</span>
+					<span class=wrapper-check>
+						<input type=radio name=select-document id=account required>
+						<label for=account><strong class=wrapper-check-title>social account</strong><i class=icon-ok></i></label>
+					</span>
+				</div>
+			</section>
+			<section class=section>
+				<h1 class=header-number-section><em class=section-number>1</em>Upload your documents&nbsp;<em>(doc, docx, text, PDF, markdown)</em></h1>
+				<strong class=wr-button>
+					<a role=button><i class=icon-upload-cloud></i>&nbsp;Upload a new file</a>
+					<input type=file name=file-name required>
+				</strong>
+				<ul class=files-list>
+					<li class=file-list-section>
+						<section>
+							<h1>file name</h1>
+							<em><i class=icon-doc-text-inv></i>business_operations.docx</em>
+							<em><i class=icon-doc-text-inv></i>business_finacial.docx</em>
+						</section>
+					<li class=file-list-section>
+						<section>
+							<h1>file size</h1>
+							<em>78kb</em>
+							<em>26kb</em>
+						</section>
+					<li class=file-list-section>
+						<section>
+							<h1>number of words</h1>
+							<em>842</em>
+							<em>2,326</em>
+						</section>
+					<li class=file-list-section>
+						<section>
+							<h1>remove</h1>
+							<em><i class=icon-trash></i></em>
+							<em><i class=icon-trash></i></em>
+						</section>
+				</ul>
+			</section>
+			<section class=section>
+				<h1 class=header-number-section><em class=section-number>2</em>Choose your languages pairings</h1>
+				<ul class=select-list>
+					<li>
+						<em class=select-title>from</em>
+						<span class=wr-select>
+							<select name=select-from id=select-from>
+								<option value=english>english</option>
+								<option value=franch>franch</option>
+								<option value=polska>polska</option>
+								<option value=arabic>arabic</option>
+							</select>
+							<i class=icon-down-dir></i>
+						</span>
+					<li>
+						<em class=select-title>to</em>
+						<span class=wr-select>
+							<select name=select-to-1 id=select-to-1>
+								<option value=arabic>arabic
+								<option value=ukrainian>ukrainian
+								<option value=russian>russian
+							</select>
+							<i class=icon-down-dir></i>
+						</span>
+						<span class=wr-select>
+							<select name=select-to-2 id=select-to-2>
+								<option value=kurdish>kurdish
+								<option value=polska>polska
+							</select>
+							<i class=icon-down-dir></i>
+						</span>
+						<button type=button class=remove-select-btn><i class=icon-trash></i></button>
+						<button type=button class="button button-add">+&nbsp;add</button>
+				</ul>
+			</section>
+			<div class=wr-sections>
+				<section class=section-select-tone>
+					<h1 class=header-number-section><em class=section-number>3</em>Select your desired tone</h1>
+					<span class=wrapper-check>
+						<input type=radio name=tone id=casual required>
+						<label for=casual>
+							<i class=icon-ok></i>
+							<strong class=wrapper-tone-title><i class=icon-chat></i><b>friendly</b><b>casual</b></strong>
+						</label>
+					</span>
+					<span class=wrapper-check>
+						<input type=radio name=tone id=pro required>
+						<label for=pro>
+							<i class=icon-ok></i>
+							<strong class=wrapper-tone-title><i class=icon-suitcase></i><b>corporate</b><b>pro</b></strong>
+						</label>
+					</span>
+					<span class=wrapper-check>
+						<input type=radio name=tone id=formal required>
+						<label for=formal>
+							<i class=icon-ok></i>
+							<strong class=wrapper-tone-title><i class=icon-megaphone></i><b>media</b><b>formal</b></strong>
+						</label>
+					</span>
+				</section>
+				<section class=section-timeline>
+					<h1 class=header-number-section><em class=section-number>4</em>Tell us how urgent this job is</h1>
+					<div class=wr-range>
+						<span class=wr-timeline>
+							<input id=range-time-line type=range min=1 max=3 step=1 name=range-time-line>
+						</span>
+						<ul class=range-list>
+							<li id=range-list-low class=range-list-low><strong>i got time</strong>
+							<li id=range-list-middle class="range-list-middle active"><strong>average</strong>
+							<li id=range-list-hight class=range-list-hight><strong>yesterday</strong>
+						</ul>
+					</div>
+					<article class=info>
+						<header>
+							<h1><i class=icon-info-circled></i>timeline info</h1>
+						</header>
+						<p>With an<em>&nbsp;average&nbsp;</em>timeline set up, our expert translator can take a reasonable of time perfecting your translation</p>
+					</article>
+				</section>
+			</div>
+			<section class=section>
+				<h1 class=header-number-section><em class=section-number>5</em>Sign up and choose a payment method</h1>
+				<strong class=sign-in>Already have an account with us? <a href=/>Sign in.</a></strong>
+				<section class=enter-fields>
+					<span class=wr-input-field>
+						<b>full name</b><input type=text name=full-name id=name required pattern="([A-Za-zА-Яа-яЁё]){4,}(\s)([A-Za-zА-Яа-яЁё]){4,}">
+						<label for=name><i class=icon-ok></i><i class=icon-cancel></i></label>
+					</span><br>
+					<span class=wr-input-field>
+						<b>email address</b><input type=email name=email id=email required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+						<label for=email><i class=icon-ok></i><i class=icon-cancel></i></label>
+						</span>
+					<span class=wr-input-field>
+						<b>choose a password</b><input type=password name=password id=password-input required>
+						<label for=password-input><i class=icon-ok></i><i class=icon-cancel></i></label>
+						<meter id=password-meter value=0 min=0 max=100></meter>
+					</span>
+				</section>
+				<section class=pay-system>
+					<span class=wrapper-check>
+					<input type=radio name=pay-system id=visa-master-c required>
+					<label for=visa-master-c>
+						<i class=icon-ok></i>
+						<img src=img/bg-paycard1.png alt=visa>
+					</label>
+				</span>
+				<span class=wrapper-check>
+					<input type=radio name=pay-system id=paypal required>
+					<label for=paypal>
+						<i class=icon-ok></i>
+						<img src=img/bg-paycard2.png alt=paypal>
+					</label>
+				</span>
+				<span class=wrapper-check>
+					<input type=radio name=pay-system id=amazon required>
+					<label for=amazon>
+						<i class=icon-ok></i>
+						<img src=img/bg-paycard3.png alt=amzon>
+					</label>
+				</span>
+				</section>
+				<section class=card-number>
+					<span class=wr-input-field>
+						<b>card number</b><input id=card-number type=text name=number required maxlength=19>
+					</span>
+					<span class=wr-input-field>
+						<b>expiry date</b><input id=date-field type=text name=date placeholder=dd/mm/yy maxlength=8>
+					</span>
+					<span class=wr-input-field>
+						<b>code</b><input type=text name=cvc required pattern="([0-9]){1,}">
+					</span>
+				</section>
+			</section>
+			<section class=section-submit>
+				<span class=agreement-checkbox>
+					<span class=wr-checkbox>
+						<input type=checkbox name=agree-checkbox id=agree-checkbox required>
+						<label for=agree-checkbox><i class="icon-check"></i></label>
+					</span>
+					<span class=agreement-title>I agree to the <a href=/>Terms &amp; Conditions</a></span>
+				</span>
+				<button type=submit class=button name=submit>place order</button>
+				<button type=button class=button name=print>print a quote</button>
+			</section>
+		</form>
+	</main>
+	<footer class=footer>
+		<div class=footer-inner>
+			<div class=wr-sections>
+			<article class=footer-section>
+				<h1><i class=icon-heart-empty></i>what we do</h1>
+				<p><em>We provide a full range of language services including content develoment, document, website and social media accounts translations.</em></p>
+			</article>
+			<article class=footer-section>
+				<h1><i class=icon-compass></i>our main office</h1>
+				<address>
+					<b>Dubai, UAE</b><br><b>P.O. Box: 502735</b><br><b>Phone: +971 (0) 44278128</b>
+				</address>
+			</article>
+			<section class=footer-section>
+				<h1><i class=icon-share></i>connect with us</h1>
+				<ul class=social-list>
+					<li><a href=/><i class=icon-facebook></i>facebook</a>
+					<li><a href=/><i class=icon-twitter></i>twitter</a>
+					<li><a href=/><i class=icon-linkedin></i>linkedin</a>
+				</ul>
+			</section>
+			</div>
+			<section class=logo-footer-section>
+				<strong class=logo>
+					<a href=/>logo cite</a>
+				</strong>
+			</section>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
