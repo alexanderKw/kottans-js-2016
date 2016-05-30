@@ -16,15 +16,15 @@ const bootstrapJsPattern = /js-/ig
 const plugin = tree => tree
    .match( { attrs: { class: true } }, node =>
    {
-    var attrsVal = node.attrs.class.split(' ');
-    let bootstrClassList = [];
-    let jsClassList = [];
+    var attrsVal = node.attrs.class.split(' ')
+    let bootstrClassList = []
+    let jsClassList = []
 
     for (let i = 0; i < attrsVal.length; i++) {
       if (attrsVal[i].match(bootstrapJsPattern)) {
         jsClassList.push(attrsVal[i]);
       } else {
-        bootstrClassList.push(attrsVal[i]);
+        bootstrClassList.push(attrsVal[i])
       }
     }
 
