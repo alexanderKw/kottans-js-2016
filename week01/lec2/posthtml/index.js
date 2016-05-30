@@ -28,9 +28,9 @@ const plugin = tree => tree
       }
     }
     
-    let dataVal = jsClassList.join(' ').replace(bootstrapJsPattern, '');
+    let dataJsVal = jsClassList.join(' ').replace(bootstrapJsPattern, '');
 
-    node.attrs['data-js'] =  dataVal.length > 0 ? dataVal : null
+    node.attrs['data-js'] =  dataJsVal.length > 0 ? dataJsVal : null
     node.attrs['class'] =  bootstrClassList.length > 0 ? bootstrClassList.join(' ') : null
 
      return node
