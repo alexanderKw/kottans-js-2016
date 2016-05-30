@@ -9,7 +9,7 @@ const html =
   <div class="col-md-6">Some content4</div>
   <div class="js-smth js-class some-class">Some content5</div>
   <div class="js-container some-class">Some content6</div>
-  <div class="js-col-lg-3">Some content6</div>
+  <div class="js-col-lg-3">Some content7</div>
 `
 
 const bootstrapJsPattern = /js-/ig
@@ -27,8 +27,10 @@ const plugin = tree => tree
         bootstrClassList.push(attrsVal[i])
       }
     }
+    
+    let dataVal = jsClassList.join(' ').replace(bootstrapJsPattern, '');
 
-    node.attrs['data-js'] =  jsClassList.join(' ').length > 0 ? jsClassList.join(' ') : null
+    node.attrs['data-js'] =  dataVal.length > 0 ? dataVal : null
     node.attrs['class'] =  bootstrClassList.length > 0 ? bootstrClassList.join(' ') : null
 
      return node
