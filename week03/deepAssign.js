@@ -3,7 +3,7 @@
 
   if (typeof Object.deepAssign == 'function') return
 
-  var isEnumerable = Object.prototype.propertyIsEnumerable;
+  var isEnumerable = Object.prototype.propertyIsEnumerable
 
   Object.defineProperty(Object, 'deepAssign',
   {
