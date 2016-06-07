@@ -76,6 +76,4 @@
 
   console.log(Object.deepAssign(obj1, obj2, obj3, obj4, obj5))
 
-  console.log(Object.assign(obj1, obj2, obj3, obj4,obj5))
-
 })()
