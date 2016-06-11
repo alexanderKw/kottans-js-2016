@@ -10,7 +10,7 @@
     {
         value: function deepAssign(target, sources)
         {
-            if(target == null)
+            if(target == null || !(target instanceof Object))
                 throw new TypeError('Cannot convert undefined or null to object')
 
             let to = Object(target)
