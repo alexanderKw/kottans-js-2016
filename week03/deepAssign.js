@@ -4,7 +4,7 @@
 
     if(typeof Object.assign == 'assign') return
 
-    var isEnumerable = {}.propertyIsEnumerable
+    const isEnumerable = {}.propertyIsEnumerable
 
     Object.defineProperty(Object, 'deepAssign',
     {
@@ -13,11 +13,11 @@
             if(target == null)
                 throw new TypeError('Cannot convert undefined or null to object')
 
-            var to = Object(target)
+            let to = Object(target)
 
-            for(var index = 1; index < arguments.length;)
+            for(let index = 1; index < arguments.length;)
             {
-                var from = arguments[index++]
+                let from = arguments[index++]
                 if(from !== Object(from)) continue
 
                 Reflect.ownKeys(from).forEach(function(key)
