@@ -6,11 +6,11 @@ const use = []
 const app = new App()
 
 function route(use, pathname) {
-	if (typeof use[pathname] === 'function') {
-		return use[pathname]()
-	} else {
-		return '404 Not Found !!'
-	}
+  if (typeof use[pathname] === 'function') {
+    return use[pathname]()
+  } else {
+    return '404 Not Found !!'
+  }
 }
 
 use['/user1'] = userFirst.user1
